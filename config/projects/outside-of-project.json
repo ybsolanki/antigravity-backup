@@ -1,0 +1,13 @@
+{
+  "id":  "outside-of-project",
+  "name":  "Outside of Project",
+  "permissionGrants":  {
+    "permissionGrants":  {
+      "allow":  [
+        "command(Remove-Item)"
+      ]
+    },
+    "v2Migrated":  true
+  },
+  "updatedAt":  "2026-06-01T03:44:48.346229700Z"
+}

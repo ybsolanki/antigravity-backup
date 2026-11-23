@@ -1,0 +1,12 @@
+{
+  "id":  "065f38f6-0373-49f5-bf74-fd909ba6135b",
+  "name":  "science/biomolecular_structure_viewer",
+  "projectResources":  {},
+  "permissionGrants":  {
+    "permissionGrants":  {},
+    "v2Migrated":  true
+  },
+  "settings":  {
+    "artifactReviewMode":  "ARTIFACT_REVIEW_MODE_TURBO"
+  }
+}

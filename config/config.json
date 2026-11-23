@@ -1,0 +1,138 @@
+{
+  "plugins": {
+    "android-cli-plugin": {
+      "enabled": true,
+      "installedFrom": {
+        "id": "antigravity-plugins-official/plugin/android-cli-plugin",
+        "marketplace": "antigravity-plugins-official",
+        "version": "1.0.16625370"
+      }
+    },
+    "canva": {
+      "installedFrom": {
+        "id": "antigravity-plugins-partners/plugin/canva",
+        "marketplace": "antigravity-plugins-partners",
+        "version": "1.0.0-agy.b0e08437"
+      }
+    },
+    "chrome-devtools-plugin": {
+      "installedFrom": {
+        "id": "antigravity-plugins-official/plugin/chrome-devtools-plugin",
+        "marketplace": "antigravity-plugins-official",
+        "version": "1.10.1"
+      }
+    },
+    "firebase": {
+      "installedFrom": {
+        "id": "antigravity-plugins-official/plugin/firebase",
+        "marketplace": "antigravity-plugins-official",
+        "version": "1.0.3"
+      }
+    },
+    "genomics": {
+      "installedFrom": {
+        "id": "antigravity-plugins-official/plugin/genomics",
+        "marketplace": "antigravity-plugins-official",
+        "version": "1.0.0"
+      }
+    },
+    "google-antigravity-sdk": {
+      "enabled": true
+    },
+    "modern-web-guidance-plugin": {
+      "enabled": true
+    },
+    "netlify": {
+      "installedFrom": {
+        "id": "antigravity-plugins-partners/plugin/netlify",
+        "marketplace": "antigravity-plugins-partners",
+        "version": "1.9.0"
+      }
+    },
+    "science": {
+      "enabled": true,
+      "installedFrom": {
+        "id": "antigravity-plugins-official/plugin/science",
+        "marketplace": "antigravity-plugins-official",
+        "version": "1.4.0"
+      }
+    },
+    "science-overview": {
+      "installedFrom": {
+        "id": "antigravity-plugins-official/plugin/science-overview",
+        "marketplace": "antigravity-plugins-official",
+        "version": "1.0.0"
+      }
+    },
+    "scientific-literature": {
+      "installedFrom": {
+        "id": "antigravity-plugins-official/plugin/scientific-literature",
+        "marketplace": "antigravity-plugins-official",
+        "version": "1.0.0"
+      }
+    },
+    "structural-biology": {
+      "installedFrom": {
+        "id": "antigravity-plugins-official/plugin/structural-biology",
+        "marketplace": "antigravity-plugins-official",
+        "version": "1.0.0"
+      }
+    }
+  },
+  "sidecars": {
+    "android-cli-plugin/compose-preview": {
+      "projectId": "8c1ecc59-97ec-4426-bfc4-470c6df22fd0",
+      "schemaVersion": 1
+    },
+    "android-cli-plugin/device-hub": {
+      "projectId": "8b91118f-5d71-4b89-8c25-1cef9dc4eda3",
+      "schemaVersion": 1
+    },
+    "science/biomolecular_structure_viewer": {
+      "projectId": "065f38f6-0373-49f5-bf74-fd909ba6135b",
+      "schemaVersion": 1
+    },
+    "structural-biology/biomolecular_structure_viewer": {
+      "projectId": "b88011c3-19cf-4c1c-bfcd-5ea18396b432",
+      "schemaVersion": 1
+    }
+  },
+  "userSettings": {
+    "autoExecutionPolicy": "CASCADE_COMMANDS_AUTO_EXECUTION_EAGER",
+    "customThemeSeedsDark": {
+      "background": "#1A1B26",
+      "foregroundOverride": "#A9B1D6",
+      "primary": "#7AA2F7"
+    },
+    "enableTerminalSandbox": false,
+    "globalPermissionGrants": {
+      "allow": [
+        "command(npx)",
+        "command(Get-ChildItem)",
+        "command(Copy-Item)",
+        "command(Select-String)",
+        "command(Get-Content)",
+        "command((Get-Content)",
+        "read_file(D:\\MinecraftServer\\plugins)",
+        "read_file(D:\\MinecraftServer\\start.bat)",
+        "read_file(D:\\MinecraftServer\\config)",
+        "read_file(D:\\MinecraftServer\\ops.json)",
+        "read_file(D:\\MinecraftServer\\whitelist.json)",
+        "command(powershell)",
+        "read_file(D:\\MinecraftServer\\backups\\manual_pre_update\\ViaVersion.jar)",
+        "read_file(D:\\MinecraftServer\\logs\\latest.log)",
+        "command(d:\\MinecraftServer\\start.bat)",
+        "command(git status)",
+        "read_url(localhost)",
+        "command(luac)",
+        "command(Copy-Item \"C:\\Users\\EI\\.gemini\\antigravity\\scratch\\vishvarupa_animation\\VISHVARUPA_42s_ANIMATED_ENTRY.mp4\" \"C:\\Users\\EI\\.gemini\\antigravity\\brain\\13d52481-d3c4-4476-8133-e31dba6b63cb\\VISHVARUPA_42s_ANIMATED_ENTRY.mp4\")"
+      ]
+    },
+    "nonWorkspaceFileAccessPolicy": "AGENT_SETTING_POLICY_ALLOW",
+    "permissionGrantsV2Migrated": true,
+    "permissionPreset": "AGENT_PERMISSION_PRESET_TURBO",
+    "remoteControlEnabled": true,
+    "remoteControlHostname": "desktop-rf8uuj6-orbital-aurora",
+    "sandboxEnabledAtV2Migration": false
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "id":  "8b91118f-5d71-4b89-8c25-1cef9dc4eda3",
+  "name":  "android-cli-plugin/device-hub",
+  "projectResources":  {},
+  "permissionGrants":  {
+    "permissionGrants":  {},
+    "v2Migrated":  true
+  },
+  "settings":  {
+    "artifactReviewMode":  "ARTIFACT_REVIEW_MODE_TURBO"
+  }
+}

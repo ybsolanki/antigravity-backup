@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+dist/
+out/
+.cache/
+*.db
+*.db-shm
+*.db-wal
+*.pb
+*.pbtxt
+
+# Large binary files
+*.exe
+*.dmg
+*.AppImage
+*.zip
+*.tar.gz
+*.asar
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs (keep .jsonl transcripts)
+*.log
+chunks/
