@@ -1,0 +1,3 @@
+"Name","RequiredServices","CanPauseAndContinue","CanShutdown","CanStop","DisplayName","DependentServices","MachineName","ServiceName","ServicesDependedOn","ServiceHandle","Status","ServiceType","StartType","Site","Container"
+"hardlock","System.ServiceProcess.ServiceController[]","False","False","True","hardlock","System.ServiceProcess.ServiceController[]",".","hardlock","System.ServiceProcess.ServiceController[]","SafeServiceHandle","Running","KernelDriver","Automatic",,
+"hasplms","System.ServiceProcess.ServiceController[]","False","False","True","Sentinel LDK License Manager","System.ServiceProcess.ServiceController[]",".","hasplms","System.ServiceProcess.ServiceController[]","SafeServiceHandle","Running","Win32OwnProcess","Automatic",,

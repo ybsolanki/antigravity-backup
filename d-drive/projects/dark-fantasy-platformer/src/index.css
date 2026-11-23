@@ -1,0 +1,116 @@
+:root {
+  --color-ash-black: #0a0a0a;
+  --color-dried-blood: #4a0404;
+  --color-muted-gold: #8c763a;
+  --color-stone-gray: #3a3a3a;
+  --color-cursed-teal: #a8d5ba33; /* Sickly Jade/Pale Teal */
+  
+  --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-ash-black);
+  color: var(--color-stone-gray);
+  font-family: var(--font-main);
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#game-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.9) inset;
+}
+
+canvas {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* Post-processing overlays */
+#noise-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0.05;
+  background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48ZmlsdGVyIGlkPSJuIj48ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iMC42NSIgbnVtT2N0YXZlcz0iMyIgc3RpdGNoVGlsZXM9InN0aXRjaCIvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbHRlcj0idXJsKCNuKSIvPjwvc3ZnPg==');
+  z-index: 100;
+}
+
+#vignette {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: radial-gradient(circle, transparent 40%, rgba(0,0,0,0.8) 100%);
+  z-index: 99;
+}
+
+.ui-layer {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.health-bar-container, .stamina-bar-container {
+  width: 200px;
+  height: 12px;
+  background: rgba(20, 20, 20, 0.8);
+  border: 1px solid var(--color-stone-gray);
+  padding: 2px;
+}
+
+.health-bar {
+  height: 100%;
+  background: var(--color-dried-blood);
+  width: 100%;
+  transition: width 0.3s ease-out;
+}
+
+.stamina-bar {
+  height: 100%;
+  background: var(--color-muted-gold);
+  width: 100%;
+  transition: width 0.1s linear;
+}
+
+#dialogue-box {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--color-stone-gray);
+  font-style: italic;
+  font-size: 1.1rem;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  text-shadow: 0 0 10px rgba(0,0,0,0.5);
+  max-width: 600px;
+}

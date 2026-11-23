@@ -1,0 +1,10 @@
+- `[x]` Define and implement `ObbyService.lua`
+    - `[x]` Programmatic map structure and checkpoints
+    - `[x]` Checkpoint touch detection and saving progress
+    - `[x]` Character respawn handling (teleporting to last checkpoint)
+    - `[x]` Fading tiles logic (Stage 2)
+    - `[x]` Kill lasers detection (Stage 4)
+    - `[x]` Low-gravity zone logic (Stage 5)
+    - `[x]` Winner pad, speed coil reward, and return portal
+- `[x]` Register and load `ObbyService.lua` inside `init.server.lua`
+- `[x]` Verify everything works in playtest (Teleportation, death recovery, obby progression, rewards)

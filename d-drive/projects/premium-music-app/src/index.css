@@ -1,0 +1,82 @@
+:root {
+  --bg-color: #050505;
+  --panel-bg: rgba(20, 20, 20, 0.7);
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --primary: #8b5cf6;
+  --primary-glow: rgba(139, 92, 246, 0.5);
+  --secondary: #ec4899;
+  --text-main: #ffffff;
+  --text-dim: #a1a1aa;
+  --accent-gradient: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
+  --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  font-family: var(--font-family);
+  overflow-x: hidden;
+  height: 100vh;
+  width: 100vw;
+  background: radial-gradient(circle at top right, #1e1b4b, #050505),
+    radial-gradient(circle at bottom left, #4c1d95, #050505);
+  background-attachment: fixed;
+}
+
+#root {
+  height: 100%;
+}
+
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  border-radius: 24px;
+}
+
+.premium-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.premium-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px -10px var(--primary-glow);
+  border-color: var(--primary);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--glass-border);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  transition: all 0.2s ease;
+}
+
+button:active {
+  transform: scale(0.95);
+}

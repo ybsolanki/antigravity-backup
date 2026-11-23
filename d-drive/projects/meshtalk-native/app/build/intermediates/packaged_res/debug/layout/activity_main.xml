@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_bg">
+
+    <ImageView
+        android:id="@+id/logoLightning"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="60dp"
+        android:src="@android:drawable/btn_star_big_on"
+        android:tint="@color/orange_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MeshTalk"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        android:textStyle="bold|italic"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoLightning" />
+
+    <TextView
+        android:id="@+id/statusGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-4dp"
+        android:background="@drawable/btn_rounded_dark"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="6dp"
+        android:text="NEURAL OFFLINE GRID: ACTIVE"
+        android:textColor="@color/status_green"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleText" />
+
+    <Button
+        android:id="@+id/openChatButton"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginHorizontal="48dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/btn_rounded_orange"
+        android:drawablePadding="12dp"
+        android:drawableStart="@android:drawable/ic_menu_send"
+        android:text="BROADCAST"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/statusGrid" />
+
+    <Button
+        android:id="@+id/startMeshButton"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginHorizontal="48dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_rounded_teal"
+        android:drawablePadding="12dp"
+        android:drawableStart="@android:drawable/ic_input_add"
+        android:text="LINK PEER"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/openChatButton" />
+
+    <LinearLayout
+        android:id="@+id/bottomButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="48dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/startMeshButton">
+
+        <Button
+            android:id="@+id/gridHealthButton"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_rounded_dark"
+            android:text="MESH"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:drawableStartCompat="@android:drawable/ic_lock_power_off" />
+
+        <Button
+            android:id="@+id/openGuideButton"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_rounded_dark"
+            android:text="GUIDE"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:drawableStartCompat="@android:drawable/ic_menu_help" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|start"
+            android:layout_marginStart="32dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RADIO IDENTITY"
+                android:textColor="@color/text_secondary"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/radioIdentityLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ZEDOXNODE-9835"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold|italic" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/profileButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/btn_rounded_dark"
+            android:padding="12dp"
+            android:src="@android:drawable/ic_menu_preferences"
+            android:tint="@color/text_secondary" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

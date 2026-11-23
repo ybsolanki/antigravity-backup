@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+  h1, h2, h3, .font-orbitron {
+    font-family: 'Orbitron', sans-serif;
+  }
+}
+
+/* Custom Glassmorphism styles */
+.glass-panel {
+  background: rgba(15, 20, 32, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card {
+  background: rgba(20, 27, 44, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Glowing Neon Text & Borders */
+.glow-bmw-blue {
+  box-shadow: 0 0 20px rgba(0, 102, 177, 0.4);
+}
+
+.glow-bmw-red {
+  box-shadow: 0 0 20px rgba(230, 0, 0, 0.5);
+}
+
+.text-glow-blue {
+  text-shadow: 0 0 10px rgba(28, 105, 210, 0.7);
+}
+
+.text-glow-red {
+  text-shadow: 0 0 10px rgba(230, 0, 0, 0.8);
+}
+
+/* Hide Scrollbars */
+::-webkit-scrollbar {
+  display: none;
+}

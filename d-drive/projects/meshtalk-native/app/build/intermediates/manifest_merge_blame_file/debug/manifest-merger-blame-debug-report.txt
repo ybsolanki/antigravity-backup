@@ -1,0 +1,319 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.zedox.meshtalk"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+11-->C:\Users\EI\.gemini\antigravity\scratch\meshtalk-native\app\src\main\AndroidManifest.xml:5:5-76
+11-->C:\Users\EI\.gemini\antigravity\scratch\meshtalk-native\app\src\main\AndroidManifest.xml:5:22-73
+12    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+12-->C:\Users\EI\.gemini\antigravity\scratch\meshtalk-native\app\src\main\AndroidManifest.xml:6:5-76
+12-->C:\Users\EI\.gemini\antigravity\scratch\meshtalk-native\app\src\main\AndroidManifest.xml:6:22-73
+13    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+13-->C:\Users\EI\.gemini\antigravity\scratch\meshtalk-native\app\src\main\AndroidManifest.xml:7:5-79
+13-->C:\Users\EI\.gemini\antigravity\scratch\meshtalk-native\app\src\main\AndroidManifest.xml:7:22-76
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->C:\Users\EI\.gemini\antigravity\scratch\meshtalk-native\app\src\main\AndroidManifest.xml:8:5-67
+14-->C:\Users\EI\.gemini\antigravity\scratch\meshtalk-native\app\src\main\AndroidManifest.xml:8:22-64
+15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+15-->C:\Users\EI\.gemini\antigravity\scratch\meshtalk-native\app\src\main\AndroidManifest.xml:9:5-79
+15-->C:\Users\EI\.gemini\antigravity\scratch\meshtalk-native\app\src\main\AndroidManifest.xml:9:22-76
+16    <uses-permission android:name="android.permission.CAMERA" />
+16-->C:\Users\EI\.gemini\antigravity\scratch\meshtalk-native\app\src\main\AndroidManifest.xml:10:5-65
+16-->C:\Users\EI\.gemini\antigravity\scratch\meshtalk-native\app\src\main\AndroidManifest.xml:10:22-62
+17
+18    <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
+19    <uses-feature
+19-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\7ce378fa0cf7795c49d200cb60e7a5fa\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:25:5-27:36
+20        android:name="android.hardware.camera"
+20-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\7ce378fa0cf7795c49d200cb60e7a5fa\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:26:9-47
+21        android:required="false" />
+21-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\7ce378fa0cf7795c49d200cb60e7a5fa\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:27:9-33
+22    <uses-feature
+22-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\7ce378fa0cf7795c49d200cb60e7a5fa\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:28:5-30:36
+23        android:name="android.hardware.camera.front"
+23-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\7ce378fa0cf7795c49d200cb60e7a5fa\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:29:9-53
+24        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
+24-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\7ce378fa0cf7795c49d200cb60e7a5fa\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:30:9-33
+25    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+26    <uses-feature
+26-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\7ce378fa0cf7795c49d200cb60e7a5fa\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:33:5-35:36
+27        android:name="android.hardware.camera.autofocus"
+27-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\7ce378fa0cf7795c49d200cb60e7a5fa\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:34:9-57
+28        android:required="false" />
+28-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\7ce378fa0cf7795c49d200cb60e7a5fa\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:35:9-33
+29    <uses-feature
+29-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\7ce378fa0cf7795c49d200cb60e7a5fa\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:36:5-38:36
+30        android:name="android.hardware.camera.flash"
+30-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\7ce378fa0cf7795c49d200cb60e7a5fa\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:37:9-53
+31        android:required="false" />
+31-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\7ce378fa0cf7795c49d200cb60e7a5fa\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:38:9-33
+32    <uses-feature
+32-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\7ce378fa0cf7795c49d200cb60e7a5fa\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:39:5-41:36
+33        android:name="android.hardware.screen.landscape"
+33-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\7ce378fa0cf7795c49d200cb60e7a5fa\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:40:9-57
+34        android:required="false" />
+34-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\7ce378fa0cf7795c49d200cb60e7a5fa\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:41:9-33
+35    <uses-feature
+35-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\7ce378fa0cf7795c49d200cb60e7a5fa\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:42:5-44:36
+36        android:name="android.hardware.wifi"
+36-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\7ce378fa0cf7795c49d200cb60e7a5fa\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:43:9-45
+37        android:required="false" />
+37-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\7ce378fa0cf7795c49d200cb60e7a5fa\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:44:9-33
+38
+39    <permission
+39-->[androidx.core:core:1.9.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\b3329962f4aa65c16b5c26083ff650ae\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+40        android:name="com.zedox.meshtalk.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+40-->[androidx.core:core:1.9.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\b3329962f4aa65c16b5c26083ff650ae\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+41        android:protectionLevel="signature" />
+41-->[androidx.core:core:1.9.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\b3329962f4aa65c16b5c26083ff650ae\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+42
+43    <uses-permission android:name="com.zedox.meshtalk.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+43-->[androidx.core:core:1.9.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\b3329962f4aa65c16b5c26083ff650ae\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+43-->[androidx.core:core:1.9.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\b3329962f4aa65c16b5c26083ff650ae\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+44
+45    <application
+45-->C:\Users\EI\.gemini\antigravity\scratch\meshtalk-native\app\src\main\AndroidManifest.xml:12:5-37:19
+46        android:allowBackup="true"
+46-->C:\Users\EI\.gemini\antigravity\scratch\meshtalk-native\app\src\main\AndroidManifest.xml:13:9-35
+47        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+47-->[androidx.core:core:1.9.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\b3329962f4aa65c16b5c26083ff650ae\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+48        android:debuggable="true"
+49        android:extractNativeLibs="true"
+50        android:icon="@mipmap/ic_launcher"
+50-->C:\Users\EI\.gemini\antigravity\scratch\meshtalk-native\app\src\main\AndroidManifest.xml:14:9-43
+51        android:label="@string/app_name"
+51-->C:\Users\EI\.gemini\antigravity\scratch\meshtalk-native\app\src\main\AndroidManifest.xml:15:9-41
+52        android:roundIcon="@mipmap/ic_launcher_round"
+52-->C:\Users\EI\.gemini\antigravity\scratch\meshtalk-native\app\src\main\AndroidManifest.xml:16:9-54
+53        android:supportsRtl="true"
+53-->C:\Users\EI\.gemini\antigravity\scratch\meshtalk-native\app\src\main\AndroidManifest.xml:17:9-35
+54        android:testOnly="true"
+55        android:theme="@style/Theme.MeshTalk" >
+55-->C:\Users\EI\.gemini\antigravity\scratch\meshtalk-native\app\src\main\AndroidManifest.xml:18:9-46
+56        <activity
+56-->C:\Users\EI\.gemini\antigravity\scratch\meshtalk-native\app\src\main\AndroidManifest.xml:20:9-27:20
+57            android:name="com.zedox.meshtalk.MainActivity"
+57-->C:\Users\EI\.gemini\antigravity\scratch\meshtalk-native\app\src\main\AndroidManifest.xml:21:13-41
+58            android:exported="true" >
+58-->C:\Users\EI\.gemini\antigravity\scratch\meshtalk-native\app\src\main\AndroidManifest.xml:22:13-36
+59            <intent-filter>
+59-->C:\Users\EI\.gemini\antigravity\scratch\meshtalk-native\app\src\main\AndroidManifest.xml:23:13-26:29
+60                <action android:name="android.intent.action.MAIN" />
+60-->C:\Users\EI\.gemini\antigravity\scratch\meshtalk-native\app\src\main\AndroidManifest.xml:24:17-69
+60-->C:\Users\EI\.gemini\antigravity\scratch\meshtalk-native\app\src\main\AndroidManifest.xml:24:25-66
+61
+62                <category android:name="android.intent.category.LAUNCHER" />
+62-->C:\Users\EI\.gemini\antigravity\scratch\meshtalk-native\app\src\main\AndroidManifest.xml:25:17-77
+62-->C:\Users\EI\.gemini\antigravity\scratch\meshtalk-native\app\src\main\AndroidManifest.xml:25:27-74
+63            </intent-filter>
+64        </activity>
+65        <activity android:name="com.zedox.meshtalk.DeviceListActivity" />
+65-->C:\Users\EI\.gemini\antigravity\scratch\meshtalk-native\app\src\main\AndroidManifest.xml:29:9-56
+65-->C:\Users\EI\.gemini\antigravity\scratch\meshtalk-native\app\src\main\AndroidManifest.xml:29:19-53
+66        <activity android:name="com.zedox.meshtalk.ChatActivity" />
+66-->C:\Users\EI\.gemini\antigravity\scratch\meshtalk-native\app\src\main\AndroidManifest.xml:30:9-50
+66-->C:\Users\EI\.gemini\antigravity\scratch\meshtalk-native\app\src\main\AndroidManifest.xml:30:19-47
+67        <activity android:name="com.zedox.meshtalk.ProfileActivity" />
+67-->C:\Users\EI\.gemini\antigravity\scratch\meshtalk-native\app\src\main\AndroidManifest.xml:31:9-53
+67-->C:\Users\EI\.gemini\antigravity\scratch\meshtalk-native\app\src\main\AndroidManifest.xml:31:19-50
+68        <activity android:name="com.zedox.meshtalk.ScannerActivity" />
+68-->C:\Users\EI\.gemini\antigravity\scratch\meshtalk-native\app\src\main\AndroidManifest.xml:32:9-53
+68-->C:\Users\EI\.gemini\antigravity\scratch\meshtalk-native\app\src\main\AndroidManifest.xml:32:19-50
+69        <activity android:name="com.zedox.meshtalk.GridHealthActivity" />
+69-->C:\Users\EI\.gemini\antigravity\scratch\meshtalk-native\app\src\main\AndroidManifest.xml:33:9-56
+69-->C:\Users\EI\.gemini\antigravity\scratch\meshtalk-native\app\src\main\AndroidManifest.xml:33:19-53
+70        <activity android:name="com.zedox.meshtalk.GuideActivity" />
+70-->C:\Users\EI\.gemini\antigravity\scratch\meshtalk-native\app\src\main\AndroidManifest.xml:34:9-51
+70-->C:\Users\EI\.gemini\antigravity\scratch\meshtalk-native\app\src\main\AndroidManifest.xml:34:19-48
+71        <activity android:name="com.zedox.meshtalk.LinkNodeActivity" />
+71-->C:\Users\EI\.gemini\antigravity\scratch\meshtalk-native\app\src\main\AndroidManifest.xml:35:9-54
+71-->C:\Users\EI\.gemini\antigravity\scratch\meshtalk-native\app\src\main\AndroidManifest.xml:35:19-51
+72
+73        <service
+73-->[com.google.mlkit:translate:17.0.2] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\5854193788e708aebaedcef90509abd9\transformed\jetified-translate-17.0.2\AndroidManifest.xml:11:9-17:19
+74            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+74-->[com.google.mlkit:translate:17.0.2] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\5854193788e708aebaedcef90509abd9\transformed\jetified-translate-17.0.2\AndroidManifest.xml:12:13-91
+75            android:directBootAware="true"
+75-->[com.google.mlkit:common:18.10.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\2a50cc1dec55822b50b220a493bd7011\transformed\jetified-common-18.10.0\AndroidManifest.xml:17:13-43
+76            android:exported="false" >
+76-->[com.google.mlkit:translate:17.0.2] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\5854193788e708aebaedcef90509abd9\transformed\jetified-translate-17.0.2\AndroidManifest.xml:13:13-37
+77            <meta-data
+77-->[com.google.mlkit:translate:17.0.2] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\5854193788e708aebaedcef90509abd9\transformed\jetified-translate-17.0.2\AndroidManifest.xml:14:13-16:85
+78                android:name="com.google.firebase.components:com.google.mlkit.nl.translate.NaturalLanguageTranslateRegistrar"
+78-->[com.google.mlkit:translate:17.0.2] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\5854193788e708aebaedcef90509abd9\transformed\jetified-translate-17.0.2\AndroidManifest.xml:15:17-126
+79                android:value="com.google.firebase.components.ComponentRegistrar" />
+79-->[com.google.mlkit:translate:17.0.2] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\5854193788e708aebaedcef90509abd9\transformed\jetified-translate-17.0.2\AndroidManifest.xml:16:17-82
+80            <meta-data
+80-->[com.google.mlkit:smart-reply:17.0.1] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\b932cc977b91a58e678cf6f4b079267e\transformed\jetified-smart-reply-17.0.1\AndroidManifest.xml:26:13-28:85
+81                android:name="com.google.firebase.components:com.google.mlkit.nl.smartreply.component.SmartReplyComponentRegistrar"
+81-->[com.google.mlkit:smart-reply:17.0.1] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\b932cc977b91a58e678cf6f4b079267e\transformed\jetified-smart-reply-17.0.1\AndroidManifest.xml:27:17-132
+82                android:value="com.google.firebase.components.ComponentRegistrar" />
+82-->[com.google.mlkit:smart-reply:17.0.1] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\b932cc977b91a58e678cf6f4b079267e\transformed\jetified-smart-reply-17.0.1\AndroidManifest.xml:28:17-82
+83            <meta-data
+83-->[com.google.android.gms:play-services-mlkit-language-id:17.0.0-beta1] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\7dacd7785fa96f775ba80ab72e4e407e\transformed\jetified-play-services-mlkit-language-id-17.0.0-beta1\AndroidManifest.xml:11:13-13:85
+84                android:name="com.google.firebase.components:com.google.mlkit.nl.languageid.internal.LanguageIdRegistrar"
+84-->[com.google.android.gms:play-services-mlkit-language-id:17.0.0-beta1] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\7dacd7785fa96f775ba80ab72e4e407e\transformed\jetified-play-services-mlkit-language-id-17.0.0-beta1\AndroidManifest.xml:12:17-122
+85                android:value="com.google.firebase.components.ComponentRegistrar" />
+85-->[com.google.android.gms:play-services-mlkit-language-id:17.0.0-beta1] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\7dacd7785fa96f775ba80ab72e4e407e\transformed\jetified-play-services-mlkit-language-id-17.0.0-beta1\AndroidManifest.xml:13:17-82
+86            <meta-data
+86-->[com.google.mlkit:common:18.10.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\2a50cc1dec55822b50b220a493bd7011\transformed\jetified-common-18.10.0\AndroidManifest.xml:20:13-22:85
+87                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+87-->[com.google.mlkit:common:18.10.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\2a50cc1dec55822b50b220a493bd7011\transformed\jetified-common-18.10.0\AndroidManifest.xml:21:17-120
+88                android:value="com.google.firebase.components.ComponentRegistrar" />
+88-->[com.google.mlkit:common:18.10.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\2a50cc1dec55822b50b220a493bd7011\transformed\jetified-common-18.10.0\AndroidManifest.xml:22:17-82
+89        </service>
+90
+91        <provider
+91-->[com.google.mlkit:common:18.10.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\2a50cc1dec55822b50b220a493bd7011\transformed\jetified-common-18.10.0\AndroidManifest.xml:9:9-13:38
+92            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+92-->[com.google.mlkit:common:18.10.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\2a50cc1dec55822b50b220a493bd7011\transformed\jetified-common-18.10.0\AndroidManifest.xml:10:13-78
+93            android:authorities="com.zedox.meshtalk.mlkitinitprovider"
+93-->[com.google.mlkit:common:18.10.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\2a50cc1dec55822b50b220a493bd7011\transformed\jetified-common-18.10.0\AndroidManifest.xml:11:13-69
+94            android:exported="false"
+94-->[com.google.mlkit:common:18.10.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\2a50cc1dec55822b50b220a493bd7011\transformed\jetified-common-18.10.0\AndroidManifest.xml:12:13-37
+95            android:initOrder="99" />
+95-->[com.google.mlkit:common:18.10.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\2a50cc1dec55822b50b220a493bd7011\transformed\jetified-common-18.10.0\AndroidManifest.xml:13:13-35
+96
+97        <activity
+97-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\7ce378fa0cf7795c49d200cb60e7a5fa\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:47:9-53:63
+98            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+98-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\7ce378fa0cf7795c49d200cb60e7a5fa\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:48:13-74
+99            android:clearTaskOnLaunch="true"
+99-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\7ce378fa0cf7795c49d200cb60e7a5fa\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:49:13-45
+100            android:screenOrientation="sensorLandscape"
+100-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\7ce378fa0cf7795c49d200cb60e7a5fa\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:50:13-56
+101            android:stateNotNeeded="true"
+101-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\7ce378fa0cf7795c49d200cb60e7a5fa\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:51:13-42
+102            android:theme="@style/zxing_CaptureTheme"
+102-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\7ce378fa0cf7795c49d200cb60e7a5fa\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:52:13-54
+103            android:windowSoftInputMode="stateAlwaysHidden" />
+103-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\7ce378fa0cf7795c49d200cb60e7a5fa\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:53:13-60
+104
+105        <service
+105-->[androidx.room:room-runtime:2.6.1] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\8921daadc40618d497c3b4d9973d4fd0\transformed\room-runtime-2.6.1\AndroidManifest.xml:24:9-28:63
+106            android:name="androidx.room.MultiInstanceInvalidationService"
+106-->[androidx.room:room-runtime:2.6.1] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\8921daadc40618d497c3b4d9973d4fd0\transformed\room-runtime-2.6.1\AndroidManifest.xml:25:13-74
+107            android:directBootAware="true"
+107-->[androidx.room:room-runtime:2.6.1] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\8921daadc40618d497c3b4d9973d4fd0\transformed\room-runtime-2.6.1\AndroidManifest.xml:26:13-43
+108            android:exported="false" />
+108-->[androidx.room:room-runtime:2.6.1] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\8921daadc40618d497c3b4d9973d4fd0\transformed\room-runtime-2.6.1\AndroidManifest.xml:27:13-37
+109
+110        <activity
+110-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\19a5fde5a106d604f5c09707b327791c\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+111            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+111-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\19a5fde5a106d604f5c09707b327791c\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+112            android:exported="false"
+112-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\19a5fde5a106d604f5c09707b327791c\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+113            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+113-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\19a5fde5a106d604f5c09707b327791c\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+114
+115        <meta-data
+115-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\0b1d21a14e45544ef97f9a8d226c2b83\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+116            android:name="com.google.android.gms.version"
+116-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\0b1d21a14e45544ef97f9a8d226c2b83\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+117            android:value="@integer/google_play_services_version" />
+117-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\0b1d21a14e45544ef97f9a8d226c2b83\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+118
+119        <provider
+119-->[androidx.emoji2:emoji2:1.2.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\bfb15ab6fd1793669e378f4db443685a\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+120            android:name="androidx.startup.InitializationProvider"
+120-->[androidx.emoji2:emoji2:1.2.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\bfb15ab6fd1793669e378f4db443685a\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+121            android:authorities="com.zedox.meshtalk.androidx-startup"
+121-->[androidx.emoji2:emoji2:1.2.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\bfb15ab6fd1793669e378f4db443685a\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+122            android:exported="false" >
+122-->[androidx.emoji2:emoji2:1.2.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\bfb15ab6fd1793669e378f4db443685a\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+123            <meta-data
+123-->[androidx.emoji2:emoji2:1.2.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\bfb15ab6fd1793669e378f4db443685a\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+124                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+124-->[androidx.emoji2:emoji2:1.2.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\bfb15ab6fd1793669e378f4db443685a\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+125                android:value="androidx.startup" />
+125-->[androidx.emoji2:emoji2:1.2.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\bfb15ab6fd1793669e378f4db443685a\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+126            <meta-data
+126-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\1809455332fe8a0709706312db7d59c7\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
+127                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+127-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\1809455332fe8a0709706312db7d59c7\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
+128                android:value="androidx.startup" />
+128-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\1809455332fe8a0709706312db7d59c7\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
+129            <meta-data
+129-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\6cd0a41eacece644b8d451017fc0f060\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+130                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+130-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\6cd0a41eacece644b8d451017fc0f060\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+131                android:value="androidx.startup" />
+131-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\6cd0a41eacece644b8d451017fc0f060\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+132        </provider>
+133
+134        <service
+134-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\e911fa66fa1acf0ef62eb3ec0bd5a7d8\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:29:9-35:19
+135            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+135-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\e911fa66fa1acf0ef62eb3ec0bd5a7d8\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:30:13-103
+136            android:exported="false" >
+136-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\e911fa66fa1acf0ef62eb3ec0bd5a7d8\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:31:13-37
+137            <meta-data
+137-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\e911fa66fa1acf0ef62eb3ec0bd5a7d8\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:32:13-34:39
+138                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+138-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\e911fa66fa1acf0ef62eb3ec0bd5a7d8\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:33:17-94
+139                android:value="cct" />
+139-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\e911fa66fa1acf0ef62eb3ec0bd5a7d8\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:34:17-36
+140        </service>
+141        <service
+141-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\95817a3a29fc3b3f7d35ab7f14388fdb\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:26:9-30:19
+142            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+142-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\95817a3a29fc3b3f7d35ab7f14388fdb\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:27:13-117
+143            android:exported="false"
+143-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\95817a3a29fc3b3f7d35ab7f14388fdb\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:28:13-37
+144            android:permission="android.permission.BIND_JOB_SERVICE" >
+144-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\95817a3a29fc3b3f7d35ab7f14388fdb\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:29:13-69
+145        </service>
+146
+147        <receiver
+147-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\95817a3a29fc3b3f7d35ab7f14388fdb\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:32:9-34:40
+148            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+148-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\95817a3a29fc3b3f7d35ab7f14388fdb\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:33:13-132
+149            android:exported="false" />
+149-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\95817a3a29fc3b3f7d35ab7f14388fdb\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:34:13-37
+150        <receiver
+150-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\6cd0a41eacece644b8d451017fc0f060\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+151            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+151-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\6cd0a41eacece644b8d451017fc0f060\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+152            android:directBootAware="false"
+152-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\6cd0a41eacece644b8d451017fc0f060\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+153            android:enabled="true"
+153-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\6cd0a41eacece644b8d451017fc0f060\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+154            android:exported="true"
+154-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\6cd0a41eacece644b8d451017fc0f060\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+155            android:permission="android.permission.DUMP" >
+155-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\6cd0a41eacece644b8d451017fc0f060\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+156            <intent-filter>
+156-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\6cd0a41eacece644b8d451017fc0f060\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+157                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+157-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\6cd0a41eacece644b8d451017fc0f060\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+157-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\6cd0a41eacece644b8d451017fc0f060\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+158            </intent-filter>
+159            <intent-filter>
+159-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\6cd0a41eacece644b8d451017fc0f060\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+160                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+160-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\6cd0a41eacece644b8d451017fc0f060\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+160-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\6cd0a41eacece644b8d451017fc0f060\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+161            </intent-filter>
+162            <intent-filter>
+162-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\6cd0a41eacece644b8d451017fc0f060\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+163                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+163-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\6cd0a41eacece644b8d451017fc0f060\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+163-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\6cd0a41eacece644b8d451017fc0f060\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+164            </intent-filter>
+165            <intent-filter>
+165-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\6cd0a41eacece644b8d451017fc0f060\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+166                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+166-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\6cd0a41eacece644b8d451017fc0f060\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+166-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\EI\Documents\caches\9.0-milestone-1\transforms\6cd0a41eacece644b8d451017fc0f060\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+167            </intent-filter>
+168        </receiver>
+169    </application>
+170
+171</manifest>

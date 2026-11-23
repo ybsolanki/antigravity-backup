@@ -1,0 +1,149 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_bg">
+
+    <LinearLayout
+        android:id="@+id/offlineGridHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_card"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@android:drawable/ic_menu_revert"
+            android:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="OFFLINE GRID"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/mapContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="24dp"
+        android:background="@drawable/btn_rounded_dark"
+        app:layout_constraintBottom_toTopOf="@+id/nodeDataCard"
+        app:layout_constraintTop_toBottomOf="@+id/offlineGridHeader">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|start"
+            android:layout_margin="16dp"
+            android:background="@drawable/btn_rounded_dark"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="4dp"
+            android:text="MESH NETWORK LIVE"
+            android:textColor="@color/status_green"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.2"
+            android:scaleType="centerInside"
+            android:src="@android:drawable/ic_dialog_map"
+            android:tint="@color/white" />
+
+        <View
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center"
+            android:background="@color/teal_accent" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/nodeDataHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/nodeDataCard">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="LIVE MESH NODE DATA"
+            android:textColor="@color/text_secondary"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RE-SCAN"
+            android:textColor="@color/teal_accent"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:drawableStartCompat="@android:drawable/ic_menu_rotate" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/nodeDataCard"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="24dp"
+        android:background="@drawable/btn_rounded_dark"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/btn_rounded_orange"
+            android:padding="12dp"
+            android:src="@android:drawable/ic_menu_myplaces"
+            android:tint="@color/white" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ZEDOXNODE-9835 (YOU)"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SELF NODE ACTIVE"
+                android:textColor="@color/status_green"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@android:drawable/checkbox_on_background"
+            android:tint="@color/teal_accent" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

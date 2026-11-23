@@ -1,0 +1,4 @@
+{
+  "name": "webgl-3d-graphics",
+  "description": "Comprehensive 3D Web Graphics plugin incorporating Three.js, React Three Fiber, Babylon.js, and GLSL Shaders."
+}
